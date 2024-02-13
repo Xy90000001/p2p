@@ -124,7 +124,7 @@ function check_os() {
             echo -e "${red}Please use CentOS 8 or higher version.${plain}\n" && exit 1
         fi
     elif [[ x"${release}" == x"ubuntu" ]]; then
-        if [[ ${os_version} -lt 16 ]]; then
+        if [[ ${os_version} -lt 15 ]]; then
             echo -e "${red}Please use Ubuntu 16 or higher version.${plain}\n" && exit 1
         fi
     elif [[ x"${release}" == x"debian" ]]; then
